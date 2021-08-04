@@ -1,1 +1,1 @@
-worker: python testbot.py
+worker: python AminoBot.py
