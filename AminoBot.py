@@ -1227,18 +1227,28 @@ def on_message(data) -> None:
 
 print("Ready")
 
+def maintenance():
+    print("launch maintenance")
+    i = 0
+    while i < 7200:
+        i += 10
+        time.sleep(10)
+    os.execv(sys.executable, ["None", os.path.basename(sys.argv[0])])
 
-def socketRoot():
-	j=0
+
+client.launch(True)
+Thread(target=maintenance).start()
+
+def reconsocketloop():
 	while True:
-		if j>=300:
-			print("Updating socket.......")
-			client.close()
-			client.start()
-			print("Socket updated")
-			j=0
-		j=j+1
-		time.sleep(1)
-socketRoot()
+		client.close()
+		client.start()
+		sleep(120)
+
+
+socketloop = threading.Thread(target=reconsocketloop, daemon=True)
+socketloop.start()
+
+print("Ready")
 
 
