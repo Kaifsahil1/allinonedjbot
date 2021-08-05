@@ -82,6 +82,9 @@ def join_community(comId: str = None, inv: str = None):
             return True
         except Exception as e:
             print_exception(e)
+@client.command("check")
+def test(data):
+    data.subClient.send_message(data.chatId, f"DJ BOT IS ONLINE {data.author}")
 
 
 @client.command("joinamino")
