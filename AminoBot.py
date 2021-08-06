@@ -1224,30 +1224,22 @@ def on_message(data) -> None:
             data.subClient.ban(data.authorId, f'Anti-Raid-Bot : MessageType {mtype} detected! Nickname: {data.author} | userId: {data.authorId} | messageId: {data.messageId}.')
         except Exception:
             pass
-
-print("Ready")
-
-def maintenance():
-    print("launch maintenance")
-    i = 0
-    while i < 7200:
-        i += 10
-        time.sleep(10)
-    os.execv(sys.executable, ["None", os.path.basename(sys.argv[0])])
-
-
 client.launch(True)
-Thread(target=maintenance).start()
-
-def reconsocketloop():
+print("Ready")
+def socketRoot():
+	j=0
 	while True:
-		client.close()
-		client.start()
-		sleep(120)
+		if j>=300:
+			print("Updating socket.......")
+			client.close()
+			client.start()
+			print("Socket updated")
+			j=0
+		j=j+1
+		time.sleep(1)
+socketRoot()
 
 
-socketloop = threading.Thread(target=reconsocketloop, daemon=True)
-socketloop.start()
 
 print("Ready")
 
