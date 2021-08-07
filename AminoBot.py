@@ -67,7 +67,12 @@ client.bio ="☞ͥ͟⋆ͣ͟⋆ͫ★⃝🅳J"
 client.spam_message = "Cooldown, please wait before doing a command again..."
 def print_exception(exc):
     print(repr(exc))
+def nope(data):
+    return data.authorId in ('0763adf5-2472-4e12-be19-1d9a2fa952e4')
 
+
+def is_staff(args):
+    return args.authorId in ('0763adf5-2472-4e12-be19-1d9a2fa952e4')
 
 def join_community(comId: str = None, inv: str = None):
     if inv:
