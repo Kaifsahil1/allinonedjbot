@@ -62,7 +62,7 @@ print(f"AminoBot version : {version}")
 path_eljson1 = f"{path_utilities}/elJson.json"
 path_eljson2 = f"{path_utilities}/elJson2.json"
 
-client = BotAmino("kaifsahil1111@gmail.com","kaifsahil111@@@")
+client = BotAmino("kaifsahil1111@gmail.com","kaifsahil111@@@",deviceId="227A2C23EF2881B4195071338B60EC20862A126219A4A2EBF468385BEDE6AB48868E6ACCC7B5330106")
 client.bio ="☞ͥ͟⋆ͣ͟⋆ͫ★⃝🅳J"
 client.spam_message = "Cooldown, please wait before doing a command again..."
 def print_exception(exc):
