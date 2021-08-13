@@ -8,3 +8,4 @@ asyncio
 txt2pdf
 pdf2image
 youtube_dl
+giphy_client
