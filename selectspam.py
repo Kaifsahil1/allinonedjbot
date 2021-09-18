@@ -1,11 +1,7 @@
 import AminoLab
-import pyfiglet
 import concurrent.futures
 from colored import fore, back, style, attr
 attr(0)
-print(fore.DARK_GREEN_SEA + style.BOLD)
-print("""𝗗𝗝 𝗦𝗔𝗛𝗜𝗟""")
-print(pyfiglet.figlet_format("Aminospam1.0", font="eftitalic"))
 client = AminoLab.Client()
 email ="kaifsahil1111@gmail.com"
 password = "kaifsahil111@@@"
