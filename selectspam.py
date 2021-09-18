@@ -10,7 +10,7 @@ client = AminoLab.Client()
 email ="kaifsahil1111@gmail.com"
 password = "kaifsahil111@@@"
 client.auth(email=email, password=password)
-msg = "check"
+msg = "advertising nhi kro behen ke lodo"
 msgtype = "108"
 clients = client.my_communities()
 for x, name in enumerate(clients.name, 1):
