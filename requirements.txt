@@ -1,2 +1,2 @@
-AminoLab
+AminoLab==1.2
 pyfiglet
