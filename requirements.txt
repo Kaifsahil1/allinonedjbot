@@ -1,11 +1,3 @@
-Amino.py
-BotAmino
-gtts
-fancy_text
-emoji
-google_trans_new
-asyncio
-txt2pdf
-pdf2image
-youtube_dl
-giphy_client
+
+AminoLab
+pyfiglet
