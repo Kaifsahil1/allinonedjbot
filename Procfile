@@ -1,1 +1,1 @@
-worker: python3 AminoBot.py
+worker: python3 selectspam.py
