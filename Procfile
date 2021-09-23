@@ -1,1 +1,1 @@
-worker: python3 spam
+worker: python3 newcoin.py
