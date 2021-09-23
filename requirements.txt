@@ -1,3 +1,2 @@
 amino
 amino-new.py
-aminolab
