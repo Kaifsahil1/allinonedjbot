@@ -1,1 +1,3 @@
-AminoLab==1.2
+amino
+request
+amino-new.py
