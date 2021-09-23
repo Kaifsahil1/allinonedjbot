@@ -14,7 +14,7 @@ def on_message(data: samino.lib.Event):
 	try: mentionIds = data.message.json["extensions"]["mentionedArray"]
 	except: pass
 	local = samino.Local(comId)
-	if msg.startswith("*tap"):
+	if msg.startswith("!tap"):
 		local.send_message(chatId,f"{nickname} done ",asWeb=True)
 		for a in range(300): client.watch_ad(userId)
 
