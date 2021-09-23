@@ -1,1 +1,1 @@
-worker: python3 newcoin.py
+worker: python3 coin
