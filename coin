@@ -1,0 +1,24 @@
+import samino,time,os,sys
+from threading import Thread
+vip = [""] # userIds
+client = samino.Client("22C47F6E327764942738F7636FE42FB247FC9E4629C98C96D91CC1456D25FD07A153995C82213E4AC0")
+client.login(email="kaifansari1819@gmail.com",password="ALIYA&@321456",asWeb=True)
+
+@client.event("on_message")
+def on_message(data: samino.lib.Event):
+	msg = data.message.content
+	msgId = data.message.messageId
+	comId = data.ndcId
+	chatId = data.message.chatId
+	userId = data.message.userId
+	nickname = data.message.author.nickname
+	try: mentionIds = data.message.json["extensions"]["mentionedArray"]
+	except: pass
+	print(f"message : {msg}\n{'_'*20}")
+	local = samino.Local(comId)
+	if msg.startswith("saiko") :
+		local.send_message(chatId,f"{nickname} coins mil gye ab to🌚 ",asWeb=True)
+		for _ in range(100):
+			Thread(target=client.watch_ad, args=(userId, )).start()
+
+client.launch()
