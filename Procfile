@@ -1,1 +1,1 @@
-worker: python3 Invisible spam.py
+worker: python3 c
