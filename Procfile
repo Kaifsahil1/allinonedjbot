@@ -1,1 +1,1 @@
-worker: python3 c
+worker: python3 spam
