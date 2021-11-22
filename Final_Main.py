@@ -11,8 +11,8 @@ password="kaifsahil+++"
 
 client.login(email=email,password=password)
 
-cid="101974055"
-cidy=101974055
+cid="41001082"
+cidy=41001082
 
 adm=[]
 ##admx=["http://aminoapps.com/p/link1","http://aminosapps.com/p/link2"]
