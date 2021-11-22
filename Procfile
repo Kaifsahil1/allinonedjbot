@@ -1,1 +1,1 @@
-worker: python3 coin
+worker: python3 final_main.py
